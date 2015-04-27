@@ -15,7 +15,7 @@
           "protocol":"TCP"
         }
       ],
-      "publicIPs": [ $SERVICE_IP ],
+      "publicIPs": [ "$SERVICE_IP" ],
       "selector":{
          "name":"frontend"
       }
