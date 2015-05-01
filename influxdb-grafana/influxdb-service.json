@@ -15,7 +15,7 @@
         "targetPort": 8086
       }
     ],
-    "publicIPs": [ "172.16.1.103" ],
+    "publicIPs": [ "$NODE_01_IP" ],
     "selector": {
       "name": "influxGrafana"
     }
