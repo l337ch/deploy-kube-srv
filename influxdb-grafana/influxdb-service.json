@@ -1,0 +1,23 @@
+{
+  "apiVersion": "v1beta3",
+  "kind": "Service",
+  "metadata": {
+    "labels": {
+      "name": "monitoring-influxdb",
+      "kubernetes.io/cluster-service": "true"
+    },
+    "name": "monitoring-influxdb"
+  },
+  "spec": {
+    "ports": [
+      {
+        "port": 8086,
+        "targetPort": 8086
+      }
+    ],
+    "publicIPs": [ "172.16.1.103" ],
+    "selector": {
+      "name": "influxGrafana"
+    }
+  }
+}
