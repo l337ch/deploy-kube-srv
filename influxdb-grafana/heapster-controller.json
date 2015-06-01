@@ -23,12 +23,16 @@
       "spec": {
         "containers": [
           {
-            "image": "kubernetes/heapster:v0.11.0",
+            "image": "kubernetes/heapster:v0.13.0",
             "name": "heapster",
             "env": [
               {
                 "name": "INFLUXDB_HOST",
                 "value": "http://monitoring-influxdb:8086"
+              },
+              {
+                "name": "SOURCE",
+                "value": "cadvisor:coreos?fleetEndpoint=$MASTER_IP:4001&cadvisorPort=4194"
               },
               {
                 "name": "SINK",
