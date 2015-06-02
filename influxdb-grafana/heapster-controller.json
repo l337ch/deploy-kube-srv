@@ -23,7 +23,7 @@
       "spec": {
         "containers": [
           {
-            "image": "kubernetes/heapster:lastest",
+            "image": "kubernetes/heapster",
             "name": "heapster",
             "env": [
               {

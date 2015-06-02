@@ -21,7 +21,7 @@
       "spec": {
         "containers": [
           {
-            "image": "kubernetes/heapster_influxdb:latest",
+            "image": "kubernetes/heapster_influxdb",
             "name": "influxdb",
             "ports": [
               {
@@ -49,7 +49,7 @@
                 "value": "8081"
               }
             ],
-            "image": "kubernetes/heapster_grafana:latest",
+            "image": "kubernetes/heapster_grafana",
             "name": "grafana"
           }
         ]
