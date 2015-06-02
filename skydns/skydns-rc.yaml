@@ -6,7 +6,7 @@ labels:
   k8s-app: kube-dns
   kubernetes.io/cluster-service: "true"
 desiredState:
-  replicas: $DNS_REPLICAS
+  replicas: 3
   replicaSelector:
     k8s-app: kube-dns
   podTemplate:
